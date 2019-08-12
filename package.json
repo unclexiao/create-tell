@@ -1,6 +1,6 @@
 {
   "name": "create-tell",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Init egg app helper tools.",
   "main": "lib/main.js",
   "scripts": {
