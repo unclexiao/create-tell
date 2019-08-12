@@ -20,8 +20,9 @@ $ tell-init --type simple [dest]
 ```bash
 $ tell-init dest
 ? Please select a boilerplate type (Use arrow keys)
-❯ simple - Simple tell app
-  plugin - tell plugin
+❯ basic - egg-boilerplate-basic
+  mp - echat miniprogram app boilerplate
+  rtc - real time communication app boilerplate
 ```
 
 ## 支持的参数
