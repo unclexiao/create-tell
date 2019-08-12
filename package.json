@@ -1,6 +1,6 @@
 {
   "name": "create-tell",
-  "version": "1.17.2",
+  "version": "1.0.1",
   "description": "Init egg app helper tools.",
   "main": "lib/init_command.js",
   "scripts": {
@@ -46,12 +46,12 @@
     "power-assert": "^1.4.4",
     "proxy": "^0.2.4"
   },
-  "homepage": "https://github.com/eggjs/egg-init",
+  "homepage": "https://github.com/unclexiao/create-tell.git",
   "repository": {
     "type": "git",
-    "url": "https://github.com/eggjs/egg-init.git"
+    "url": "https://github.com/unclexiao/create-tell.git"
   },
-  "bugs": "https://github.com/eggjs/egg/issues",
+  "bugs": "https://github.com/unclexiao/create-tell/issues",
   "keywords": [
     "egg",
     "egg-init"
@@ -62,5 +62,5 @@
   "engines": {
     "node": ">=6.0.0"
   },
-  "author": "fengmk2 <fengmk2@gmail.com> (http://fengmk2.com)"
+  "author": "unclexiao <xh449129722@gmail.com> (https://www.unclexiao.com/)"
 }
