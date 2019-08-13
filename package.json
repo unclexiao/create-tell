@@ -48,10 +48,7 @@
     "url": "https://github.com/unclexiao/create-tell.git"
   },
   "bugs": "https://github.com/unclexiao/create-tell/issues",
-  "keywords": [
-    "egg",
-    "egg-init"
-  ],
+  "keywords": ["egg", "egg-framework", "egg-boilerplate"],
   "ci": {
     "version": "8, 10"
   },

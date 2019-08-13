@@ -8,7 +8,7 @@ const Helper = require('./helper');
 
 const tmp = path.join(__dirname, '../.tmp');
 
-const Command = require('../lib/init_command');
+const Command = require('../lib/main');
 
 describe('test/category.test', () => {
   let command;
@@ -44,7 +44,9 @@ describe('test/category.test', () => {
   });
 
   it('should work with prompt', function* () {
-    helper.mock([[ 'simple-app', 'this is xxx', 'TZ', helper.KEY_ENTER, 'test', helper.KEY_ENTER ]]);
+    helper.mock([
+      [ 'simple-app', 'this is xxx', 'TZ', helper.KEY_ENTER, 'test', helper.KEY_ENTER ],
+    ]);
     const boilerplatePath = path.join(__dirname, 'fixtures/simple-test');
     yield command.run(tmp, [ 'simple-app', '--force', '--template=' + boilerplatePath ]);
 
@@ -71,9 +73,16 @@ describe('test/category.test', () => {
   });
 
   it('.replaceTemplate', () => {
-    assert(command.replaceTemplate('hi, {{ user }}', { user: 'egg' }) === 'hi, egg');
-    assert(command.replaceTemplate('hi, {{ user }}\n{{type}} {{user}}', { user: 'egg', type: 'init' }) === 'hi, egg\ninit egg');
+    assert(command.replaceTemplate('hi, {{ user }}', {
+      user: 'egg',
+    }) === 'hi, egg');
+    assert(command.replaceTemplate('hi, {{ user }}\n{{type}} {{user}}', {
+      user: 'egg',
+      type: 'init',
+    }) === 'hi, egg\ninit egg');
     assert(command.replaceTemplate('hi, {{ user }}', {}) === 'hi, {{ user }}');
-    assert(command.replaceTemplate('hi, \\{{ user }}', { user: 'egg' }) === 'hi, {{ user }}');
+    assert(command.replaceTemplate('hi, \\{{ user }}', {
+      user: 'egg',
+    }) === 'hi, {{ user }}');
   });
 });

@@ -1,5 +1,7 @@
 create-tell
 =======
+[![Build Status](https://travis-ci.org/unclexiao/create-tell.svg?branch=master)](https://travis-ci.org/unclexiao/create-tell)
+
 创建Egg项目的脚手架
 
 ## 安装
