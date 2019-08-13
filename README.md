@@ -1,6 +1,14 @@
 create-tell
 =======
-[![Build Status](https://travis-ci.org/unclexiao/create-tell.svg?branch=master)](https://travis-ci.org/unclexiao/create-tell)
+
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+
+[npm-image]: https://img.shields.io/npm/v/create-tell.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/create-tell
+[travis-image]: https://img.shields.io/travis/eggjs/egg.svg?style=flat-square
+[travis-url]: https://travis-ci.org/unclexiao/create-tell.svg?branch=master
+
 
 创建Egg项目的脚手架
 
