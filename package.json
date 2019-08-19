@@ -1,6 +1,6 @@
 {
   "name": "create-tell",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Init egg app helper tools.",
   "main": "lib/main.js",
   "scripts": {
@@ -29,7 +29,7 @@
     "npm-updater": "^3.0.3",
     "proxy-agent": "^2.3.1",
     "urllib": "^2.33.0",
-    "yargs": "^11.1.0"
+    "yargs": "^13.3.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -48,7 +48,11 @@
     "url": "https://github.com/unclexiao/create-tell.git"
   },
   "bugs": "https://github.com/unclexiao/create-tell/issues",
-  "keywords": ["egg", "egg-framework", "egg-boilerplate"],
+  "keywords": [
+    "egg",
+    "egg-framework",
+    "egg-boilerplate"
+  ],
   "ci": {
     "version": "8, 10"
   },
