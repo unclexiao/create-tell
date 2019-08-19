@@ -45,10 +45,10 @@ describe('test/category.test', () => {
 
   it('should work with prompt', function* () {
     helper.mock([
-      ['simple-app', 'this is xxx', 'TZ', helper.KEY_ENTER, 'test', helper.KEY_ENTER],
+      [ 'simple-app', 'this is xxx', 'TZ', helper.KEY_ENTER, 'test', helper.KEY_ENTER ],
     ]);
     const boilerplatePath = path.join(__dirname, 'fixtures/simple-test');
-    yield command.run(tmp, ['simple-app', '--force', '--template=' + boilerplatePath]);
+    yield command.run(tmp, [ 'simple-app', '--force', '--template=' + boilerplatePath ]);
 
     assert(fs.existsSync(path.join(command.targetDir, '.gitignore')));
     assert(fs.existsSync(path.join(command.targetDir, '.eslintrc')));
@@ -62,8 +62,8 @@ describe('test/category.test', () => {
   });
 
   // it('should prompt', function* () {
-  //   helper.mock([ helper.KEY_DOWN, [ 'test', 'this is xxx', 'TZ', helper.KEY_ENTER ]]);
-  //   yield command.run(tmp, [ 'prompt-app', '--force' ]);
+  //   helper.mock([helper.KEY_DOWN, ['test', 'this is xxx', 'TZ', helper.KEY_ENTER]]);
+  //   yield command.run(tmp, ['prompt-app', '--force']);
 
   //   assert(fs.existsSync(path.join(command.targetDir, '.gitignore')));
   //   assert(fs.existsSync(path.join(command.targetDir, 'package.json')));
