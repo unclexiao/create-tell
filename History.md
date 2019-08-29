@@ -1,5 +1,5 @@
 # Changlog
-## 2019-08-19, Version  1.0.6 @unclexiao
+## 2019-08-19, Version  1.0.10 @unclexiao
 - 新增中间件：请求日志、用户鉴权、错误捕获
 - 升级相关依赖，比如：[yargs](https://www.npmjs.com/package/yargs)
 
